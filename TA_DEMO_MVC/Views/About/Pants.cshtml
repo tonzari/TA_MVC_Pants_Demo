@@ -1,0 +1,9 @@
+﻿@model List<Pants> // Creating a variable to store an object that is being passed from the controller
+
+<h2>Pants For Sale</h2>
+<ul>
+	@for (var i = 0; i < Model.Count; i++)
+   {
+	   <li>@Model[i].Brand</li>
+   }
+</ul>
